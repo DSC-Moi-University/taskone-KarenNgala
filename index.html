@@ -6,56 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webdev task one </title>
 
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
 
-
     <div class="header">
-        <h1>My Website</h1>
-        <p>A website created by me.</p>
+        <h1>Alain de Botton</h1>
+        <p>British-Swiss philosopher and author</p>
     </div>
 
     <div class="navbar">
 
         <!--Add navigation links on the right-->
-
+        <ul>
+            <li><a href="#side">About</a></li>
+            <li><a href="#content">You-tube</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
 
     <div class="row">
-        <div class="side">
+        <div class="side" id="side">
             <h2>About Me</h2>
-            <h5>Photo of me:</h5>
             <!--Add a div of class "fakeimg"-->
             <!--Add an image as a link to navigate home of height 200px-->
+            <div class="fakeimg">
+                <a href="#"> <img src="images/portrait.jpg" alt="portrait of alain de botton"> </a>
+            </div>
 
-            <!--Add a blockquote decribing yourself ,make the key aspect strong-->
-            <h3>More Text</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
+            <!--Add a blockquote describing yourself, make the key aspect strong-->
+            <blockquote>
+                I was born in Zurich, Switzerland in 1969, but I now live in London with my wife Charlotte. I write essayistic books that have been described as 'philosophy for everyday life.'
+                <br> I started, and help run, a school in London, <strong>The School of Life,</strong> that is dedicated to a new version of education.
+            </blockquote>
+            <p>
+                My first book, <i>Essays in Love</i>, was published when I was twenty-three.
+                <br> My most recent book, <i>The School of Life: An Emotional Education</i>, is a collection of essays written for The School of Life.
+            </p>
             <!--Add a photo album-->
+
+            <div class="album">
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+            </div>
         </div>
         <div class="main">
-            <!--Add a heading 2 DSC Moi University Onboarding Session -->
-            <!--Add a heading 5 with date-->
-            <!--Add a div class fakeimg ,add a youtube video in the div sourcing from DSC Moi University Mentorship Program Onboarding Session-->
-            <p>Some text..</p>
-            <!--Create unordered lists with ordered sublist-->
-            <br>
-            <h2>Contacts</h2>
+            <div class="content" id="content">
+                <!--Add a heading 2 DSC Moi University Onboarding Session -->
+                <!--Add a heading 5 with date-->
+                <!--Add a div class fakeimg ,add a youtube video in the div sourcing from DSC Moi University Mentorship Program Onboarding Session-->
+                <h2>The 8 Rules of The School of Life</h2>
+                <h5>20/10/20</h5>
+                <div class="fakeimg">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1JCJVaK48RM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <h4>My favorite rules</h4>
+                <!--Create unordered lists with ordered sublist-->
+                <ol>
+                    <li>Accept imperfection
+                        <ul>
+                            <li>We are inherently flawed and broken beings, perfection is beyond us</li>
+                            <li>The only normal people are those we don't yet know very well</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Overcome romanticism
+                        <ul>
+                            <li>'The one' is a cruel invention</li>
+                            <li>Compatibility isn't the prerequisite for love, it is the <strong>achievement</strong> of love</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Transcend yourself
+                        <ul>
+                            <li>None of us count, in the wider scheme of things - thankfully</li>
+                            <li>We must regularly dwell on the kind indifference of infinity</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
 
 
             <!--Add a form to input email,phone number and a message-->
+            <div class="contact" id="contact">
+
+                <h2>Contact Me</h2>
+                <form action="post">
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" placeholder="Your email...">
+
+                    <label for="phone">Phone number</label>
+                    <input type="number" name="phone" placeholder="Your phone number...">
+
+                    <br>
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Write something..."></textarea>
+
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
     </div>
 
     <div class="footer">
-        <h2>Footer</h2>
         <!-- Add favorite social media icons linking to your social account-->
+        <ul>
+            <li><a href="https://twitter.com/alaindebotton" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+        <small>This website was created for learning purposes</small>
     </div>
-
-
-
-
 </body>
 
 </html>
